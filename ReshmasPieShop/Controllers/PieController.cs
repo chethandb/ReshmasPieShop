@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ReshmasPieShop.Models;
+using ReshmasPieShop.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,7 +22,11 @@ namespace ReshmasPieShop.Controllers
 
         public ViewResult List()
         {
-            return View(_pieRepository.AllPies);
+            PiesListViewModel piesListViewModel = new PiesListViewModel();
+            piesListViewModel.Pies = _pieRepository.AllPies;
+            piesListViewModel.CurrentCategory = "Cheese cakes";
+
+            return View(piesListViewModel);
         }
     }
 }
