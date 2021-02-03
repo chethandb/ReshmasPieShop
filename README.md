@@ -9,7 +9,6 @@ Building Web Applications with ASP.NET Core MVC
 ## Module 2 - Creating the List Page
 - Creating the Model and the Repository
 - Creating the Controller
-- Creating the Controller
 - Adding the View
 - Creating the View and the ViewModel
 - Adding a Layout, ViewImports, and ViewStart
