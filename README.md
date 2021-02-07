@@ -21,3 +21,8 @@ Building Web Applications with ASP.NET Core MVC
 - Creating the Real Repository
 - Creating and Initializing the Database
 - Updating the Database
+
+
+## Module 4 - Adding Navigation to the Site
+- Configuring the Routing System
+- Adding Navigation with Tag Helpers
