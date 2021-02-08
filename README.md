@@ -26,3 +26,11 @@ Building Web Applications with ASP.NET Core MVC
 ## Module 4 - Adding Navigation to the Site
 - Configuring the Routing System
 - Adding Navigation with Tag Helpers
+
+
+## Module 5 - Improving the Views in the Application
+- Working with Partial Views
+- Creating the Home Page
+- Creating the Shopping Cart
+- Adding View Components
+- Creating a Custom Tag Helper
