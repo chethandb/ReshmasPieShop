@@ -18,6 +18,8 @@ namespace ReshmasPieShop.Models
 
         public DbSet<Category> Categories { get; set; }
 
+        public DbSet<ShoppingCartItem> ShoppingCartItems { get; set; }
+
         // to seed data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
