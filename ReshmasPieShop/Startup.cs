@@ -29,6 +29,11 @@ namespace ReshmasPieShop
             services.AddScoped<IPieRepository, PieRepository>();
             services.AddScoped<ICategoryRepository, CategoryRepository>();
 
+            // services to handle sessions in the application
+            services.AddScoped<ShoppingCart>(sc => ShoppingCart.GetCart(sc));
+            services.AddHttpContextAccessor();
+            services.AddSession();
+
             // supports MVC
             services.AddControllersWithViews();
         }
@@ -43,6 +48,10 @@ namespace ReshmasPieShop
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+
+            // middleware to handle session
+            app.UseSession();
+
             app.UseRouting();
 
             app.UseEndpoints(endpoints =>
